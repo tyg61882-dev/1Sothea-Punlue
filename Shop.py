@@ -123,7 +123,7 @@ def get_emoji_str(icon_id, fallback=""):
 # ====================================================================================================
 
 async def aba_generate_qr_async(amount, ref_id):
-    payload = {"api_key": ABA_API_KEY, sk_98c99cdfff01a78707b83590dd181d709c04869a721ce304"merchant_id"567011": ABA_MERCHANT_ID,567011 "username": str(ref_id)[:64], "amount": round(float(amount), 2)}
+    payload = {"api_key": ABA_API_KEY, "merchant_id"": ABA_MERCHANT_ ID "username": str(ref_id)[:64], "amount": round(float(amount), 2)}
     try:
         async with aiohttp.ClientSession() as session:
             async with session.post(ABA_CREATE_URL, json=payload, timeout=25) as resp:
