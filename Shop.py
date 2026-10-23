@@ -26,7 +26,7 @@ from aiogram.enums import ParseMode
 # [ កំណត់រចនាសម្ព័ន្ធទូទៅ ]
 # ====================================================================================================
 
-BOT_TOKEN = "8899498172:AAFNlsI3gvv9UiFJ4lSJ6SWsl0zEyLUfz00"
+BOT_TOKEN = "8805862462:AAH0KyXj7F7TZRfQIJICPpQ2tjtqpEyVUxY"
 OWNER_ID = 8371081776
 
 # 🚀 ABA API CONFIGURATION
@@ -38,7 +38,7 @@ ABA_CHECK_URL = "https://khmer-system.com/aba-api/check-payment"
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - [%(levelname)s] - %(message)s')
 logger = logging.getLogger("BlackModBot")
 
-bot = Bot(token=TOKEN = 8899498172:AAFNlsI3gvv9UiFJ4lSJ6SWsl0zEyLUfz00
+bot = Bot(token=TOKEN = 
 dp = Dispatcher()
 
 background_tasks = set()
