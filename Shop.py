@@ -66,7 +66,7 @@ def init_db():
     conn.close()
 
 def execute_db(query, params=(), fetch=False, fetchall=False):
-    conn = sqlite3.connect('zento_store.db', timeout=30)
+    conn = sqlite3.connect('black_store.db', timeout=30)
     c = conn.cursor()
     try:
         c.execute(query, params)
