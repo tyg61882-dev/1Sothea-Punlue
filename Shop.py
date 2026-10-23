@@ -30,7 +30,7 @@ BOT_TOKEN = "8805862462:AAH0KyXj7F7TZRfQIJICPpQ2tjtqpEyVUxY"
 OWNER_ID = 8371081776
 
 # 🚀 ABA API CONFIGURATION
-ABA_API_KEY = "sk_98c99cdfff01a78707b83590dd181d709c04869a721ce304
+ABA_API_KEY = "sk_98c99cdfff01a78707b83590dd181d709c04869a721ce304"
 ABA_MERCHANT_ID = "567011"
 ABA_CREATE_URL = "https://khmer-system.com/aba-api/generate-qr"
 ABA_CHECK_URL = "https://khmer-system.com/aba-api/check-payment"
