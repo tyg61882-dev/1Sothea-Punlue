@@ -40,7 +40,7 @@ if not BOT_TOKEN:
     raise SystemExit("BOT_TOKEN is empty - check your .env file")
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - [%(levelname)s] - %(message)s')
-logger = logging.getLogger("BlacModBot")
+logger = logging.getLogger("BlackModBot")
 
 bot = Bot(token=BOT_TOKEN, default=DefaultBotProperties(parse_mode=ParseMode.HTML))
 dp = Dispatcher()
@@ -299,7 +299,7 @@ async def cmd_start(msg: Message, state: FSMContext):
     if is_admin or msg.from_user.id == OWNER_ID:
         kb.append([RBtn(text="Admin Panel", style="danger", icon_custom_emoji_id="5890864241388293875")])
         
-    text = """<tg-emoji emoji-id="5440431182602842059">💎</tg-emoji> <b>BLACK MOD KEY</b>
+    text = """<tg-emoji emoji-id="5440431182602842059">💎</tg-emoji> <b>JENZY MOD KEY</b>
     
 សូមស្វាគមន៍មកកាន់ប្រព័ន្ធទិញទំនិញស្វ័យប្រវត្តិ! សូមជ្រើសរើសមុខងារខាងក្រោម៖"""
     
