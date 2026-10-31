@@ -28,7 +28,7 @@ from aiogram.enums import ParseMode
 load_dotenv()
 
 BOT_TOKEN = os.getenv("BOT_TOKEN", "").strip()
-OWNER_ID = int(os.getenv("OWNER_ID", "0"))
+OWNER_ID = int(os.getenv("OWNER_ID", "7840448626"))
 
 # 🚀 ABA API CONFIGURATION
 ABA_API_KEY = os.getenv("ABA_API_KEY", "").strip()
