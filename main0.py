@@ -251,8 +251,8 @@ DEFAULT_DB = {
     "stock": [],
     "orders": [],
     "settings": {
-        "contact_admin": "@putireach",
-        "bot_name": "REACH MOD VIP",
+        "contact_admin": "@lusuki",
+        "bot_name": "..!",
         "maintenance": "0",
         "order_group_id": ""
     },
@@ -1065,8 +1065,8 @@ async def cmd_start(msg: Message, state: FSMContext):
     rk = get_main_reply_kb(msg.from_user.id)
 
     text = (
-        f"<tg-emoji emoji-id='{ICON_HELLO}'>👋</tg-emoji> <b>Hello {fname} !</b>\n\n\n"
-        f"<tg-emoji emoji-id='{ICON_STORE}'>🏪</tg-emoji> Welcome to <b>{bot_name}</b> bot store.\n"
+        f"<tg-emoji emoji-id='5440431182602842059'>👋</tg-emoji> <b>HELLO Welcome To Bot  {fname} !</b>\n\n\n"
+        f"<tg-emoji emoji-id='5312361253610475399'>🛒</tg-emoji> Welcome to <b>{bot_name}</b> bot store.\n"
         f"Pls click button <b>BUY NOW</b>"
     )
 
@@ -1088,7 +1088,7 @@ async def cmd_start(msg: Message, state: FSMContext):
 # [ SHOP FLOW ]
 # ====================================================================================================
 
-@dp.message(F.text == "BUY NOW")
+@dp.message(F.text == "ទិញឥឡូវនេះ")
 async def shop_categories(msg: Message, state: FSMContext):
     if get_setting("maintenance", "0") == "1" and not is_admin_user(msg.from_user.id):
         return await msg.answer("Bot Update សូមរងចាំ")
@@ -1271,7 +1271,7 @@ async def render_checkout(event, item_id, qty, is_edit=True, old_msg_id=None):
     pay_enabled = stock_count >= qty and stock_count > 0
 
     text = (
-        f"<tg-emoji emoji-id=\"{ICON_CONFIRM_TITLE}\">🛒</tg-emoji> <b>កំណត់ចំនួនទំនិញដែលចង់ទិញ</b>\n"
+        f"<tg-emoji emoji-id="6213200278527680900">🛒</tg-emoji> <b>កំណត់ចំនួនទំនិញដែលចង់ទិញ</b>\n"
         f"━━━━━━━━━━━━━━━━━━━━━\n"
         f"<tg-emoji emoji-id=\"{ICON_CONFIRM_PRODUCT}\">📦</tg-emoji> • <b>ទំនិញ៖</b> {cat_name}\n"
         f"<tg-emoji emoji-id=\"{ICON_CONFIRM_PLAN}\">🏷</tg-emoji> • <b>កញ្ចប់៖</b> {item['name']}\n"
@@ -1826,7 +1826,7 @@ async def buy_now_direct_btn(call: CallbackQuery):
 # [ ADMIN PANEL ]
 # ====================================================================================================
 
-@dp.message(F.text == "Admin Panel")
+@dp.message(F.text == "ADMIN PANEL")
 async def open_admin(msg: Message):
     if not is_admin_user(msg.from_user.id):
         return
